@@ -3,8 +3,7 @@ import string
 import re
 import math 
 
-# Name: Sean Holschier z5308039
-# Assignment: Programming for Security Assignment 1
+# Name: Sean Hol
 # Description: A python script for decoding a text file encrypted with a Vigenere cipher, with no given key. 
 #   Utilises a modified version of the Kasiski examination method where rather than a repetition of a keyword is searched for, we look for any single letter matches for any shift amount. Then the greatest common denominator is considered the key length.
 #   Once the key length is determined, english unigram frequency analysis is used to break the caesar cipher for each letter of the key.
