@@ -46,6 +46,9 @@ def solveKeyLen(alphastring):
     matches.pop(large4Index)
     #Gets the greatest common denominator of the 4 largest match offset
     keysize = math.gcd(large1Offset, large2Offset, large3Offset, large4Offset)
+	big4 = [large1Offset, large2Offset, large3Offset, large4Offset]
+    if keysize == 1:
+        keysize = min(big4)
     print("Keysize determined to be: " + str(keysize))
     return keysize
 
